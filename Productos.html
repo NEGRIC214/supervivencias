@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kit de supervivencia</title>
+    <link rel="shortcut icon" href="img/Animal.jpg" sizer="96">
+    <link rel="stylesheet" href="estilos.css">
+
+<style>
+   .banner{
+         background-image: url('img/Montaña2.jpg');
+         justify-content: center;
+         align-items: center;
+         display: flex;
+         background-size: cover;
+         width: 100%; 
+         height: 500px;
+             }
+    </style>
+</style>
+<style>
+  .container{
+     width: 90%;
+     max-width: 1100px;
+     margin: auto;
+  }
+ 
+  body {
+     font-family: Arial, sans-serif;
+     line-height: 1.6;
+     background-color: #f4f4f4;
+     color: #333;
+  }
+  header{
+     background: #333;
+     color:#fff;
+     padding: 1em 0;
+  }
+  
+  
+  nav ul {
+     list-style: none;
+     float: right;
+  }
+  nav  ul li {
+     display: inline;
+     margin-left: 20px;
+  }
+  nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+  }
+  aside {
+      background-color: #f8f9fa;
+      padding: 1rem;
+    }
+  .hero{
+      background: #007BFF;
+      color: white;
+      padding: 60px 0;
+      text-align: center ;
+  }
+  .hero .btn {
+      display: inline-block;
+      margin-top: 20px;
+      background: #fff;
+      color: #007BFF;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+  }
+  .servicios{
+       padding: 40px 0;
+       background: #fff;
+  }
+  .servicios .cards{
+       display: flex;
+       gap: 20px;
+       margin-top: 20px;
+       flex-wrap: wrap;
+  }
+  .card {
+        flex: 1;
+        background: #f0f0f0;
+        padding: 20px;
+        border-radius: 8px;
+  }
+  input, textarea, button{
+             display: block;
+             margin-bottom: 10px;
+             padding: 10px;
+             width: 100%;
+             max-width: 400px;
+
+        }
+  #resultado{
+            margin-top: 20px;
+            padding: 15px;
+          background: #f0f0f0;
+          border-radius: 25%;
+        }
+  footer {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 40px;
+  }
+</style>
+
+</head>
+<body>
+    <div class="banner">
+     <h1></h1>
+</div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="img/Logoanimal1.png"width="100px"height="100px"></a>
+            <center><h1>La Tienda Kid de Supervivencia</h1> </center>
+       
+  <header>
+    
+    
+    <div class="container">
+          
+
+      <nav>
+        <ul>
+            <li><a href="Inicio.html">Inicio</a></li>
+            <li><a href="Quiensomos.html">Quien Somos</a></li>
+            <li><a href="Productos.html">Productos</a></li>
+            <li><a href="Contacto.html">Contactanos</a></li>
+            <li><a href="Tiendaonline.html">TiendaOnline</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+ <section class="hero">
+    <div class="container">
+        <h2>Bienvenidos a nuestra tienda de supervivencia</h2>
+        <p>Ofrecemos soluciones profesionales a tus necesidades.</p>
+            
+    </div>
+ </section>
+ <style>
+      .banner{
+         
+         justify-content: center;
+         align-items: center;
+         display: flex;
+         background-size: cover;
+         width: 100%; 
+         height: 500px;
+         background-color: blue;
+             }
+    </style>
+<main class="max-w-4xl mx-auto p-6 bg-white shadow-lg mt-8 rounded-lg">
+
+
+   <section>
+    <h2 class="text-2xl font-semibold mb-4">Formulario de Pedidos</h2>
+    <form id="tiendadesupervivencia" class="space-y-4">
+
+    <!-- Nombre -->
+    <label class="block">
+        <span class="text-gray-700">Nombre:</span>
+        <input type="text" name="nombre" class="mt-1 block w-full border rounded-md p-2" placeholder="Tu nombre completo" required />
+    </label>
+
+    <!-- Fecha del pedido -->
+     <label class="block">
+        <span class="text-gray-700">Fecha de entrega</span>
+        <input type="date" name="fecha" class="mt-1 block w-full border rounded-md p-2"required />
+     </label> 
+
+     <!-- Hora del pedido-->
+     <label class="block">
+        <span class="text-gray-700">Hora de entrega</span>
+        <input type="time" name="hora" class="mt-1 block w-full border rounded-md p-2" required />
+     </label>
+
+     
+
+    
+     <label class="block">
+        <span class="text-gray-700">Sugerencias Especiales</span>
+        <textarea name="Sugerencias" rows="4" class="mt-1 block w-full boder rounded-md p-2" placeholder="Por la compra de dos unidades un 20% de descuento, por la compra de más de de dos unidades un 30%...."></textarea>
+     </label>
+
+     
+     <label class="block">
+         <span class="text-gray-700">Unidades</span>
+         <select name="tamano" class="mt-1 block w-full border rounded-md p-2">
+            <option value="caja">Cajas</option>
+            <option value="bolsa">Bolsas</option>
+            <option value="sobres">Sobres</option>
+         </select>
+     </label>
+
+   
+   <label class="block">
+      <span class="text-gray-700">Articulos:</span>
+      <select name="ingredientes" multiple class="mt-1 block w-full border rounded-md p-2">
+        <option value="pilas">Pilas</option>
+        <option value="linternas">Linternas</option>
+        <option value="mochilas">Mochilas</option>
+        <option value="infernillos">Infernillos portatiles</option>
+        <option value="bombonas">Bombonas portatiles</option>
+        <option value="botiquin">Botiquin</option>
+        <option value="focosportatiles">Focos Portatiles</option>
+        <option value="ropaimpermeable">Ropa impermeable</option>
+        <option value="encendedor">Encendedor</option>
+        <option value="utensilio">Utensilios</option>
+      </select>
+   </label>
+
+   
+    <div class="flex gap-4 mt-6">
+        <button type="submit" class="bg-green-500 text-white px-4 py-2 rounder hover:bg-green-600" onclick="enviarFormulario()">Enviar pedido</button>
+        <button type="reset" class="bg-gray-400 text-white px-4 py-2 rounder hover:bg-gray-400" onclick="resetFormulario()">Resetear</button>
+    </div>
+
+ </form>
+</section>
+</main>
+
+<!-- alerta-->
+
+<button onclick="myFunction()">Alerta</button>
+
+<script >
+       function myFunction(){
+           alert("Esto es una prueba de examen");
+       }
+</script>
+
+
+
+
+
+<footer>
+      <div class="pie">
+         <div class="logo"><img src="img/Logoanimal1.png" width="150px" height="150px"></div>
+  <div class="container">
+    <p>&copy; 2025 Kit de supervivencia. Todos los derechos reservados.</p>
+  </div>
+</footer>
+</body>
+</html>
